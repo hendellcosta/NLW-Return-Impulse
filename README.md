@@ -4,7 +4,7 @@
 	NLW Return Impulse by Rockeseat
 </h1>
 <p align="center">
-<img src="https://github.com/IgorThierry/nlw-return-impulse/blob/main/.github/Capa.png?raw=true" alt="Banner" />
+<img src="https://bit.ly/3OR4TJk" alt="Banner" />
 </p>
 
 
