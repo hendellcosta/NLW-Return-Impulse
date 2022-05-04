@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./src/assets/images/banner.png" alt="Banner" />
+<img src="https://github.com/IgorThierry/nlw-return-impulse/blob/main/.github/Capa.png?raw=true" alt="Banner" />
 </p>
 
 <h1 align="center">
