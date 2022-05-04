@@ -1,6 +1,6 @@
-<span align="center">
+<p align="center">
     <img alt="Project Banner" src="./src/assets/images/banner.png"/>
-</span>
+</p>
 
 <h1 align="center">
 	NLW Return Impulse by Rockeseat
