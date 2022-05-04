@@ -1,10 +1,8 @@
-<p style="align:center">
-    <img alt="Project Banner" src=".web\src\assets\images\banner.png"/>
-</p>
-
 <h1 align="center">
 	NLW Return Impulse by Rockeseat
 </h1>
+
+<img src="./src/assets/images/banner.png" alt="">
 
 
 ## 🚀 Project
