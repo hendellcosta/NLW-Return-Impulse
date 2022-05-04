@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Project Banner" src="./src/assets/images/banner.png"/>
+    <img alt="Project Banner" src="./assets/images/banner.png"/>
 </p>
 
 <h1 align="center">
