@@ -1,4 +1,4 @@
-<p align="center">
+<p style="align:center">
     <img alt="Project Banner" src=".web\src\assets\images\banner.png"/>
 </p>
 
@@ -8,8 +8,7 @@
 
 
 ## 🚀 Project
-Um Component Widget para feedback que pode ser utilizado em qualquer site.
-A Feedback Widget to use in websites.
+A Feedback Widget to use in any website.
 
 ## 🔧 Technologies
 
