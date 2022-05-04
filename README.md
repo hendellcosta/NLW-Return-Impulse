@@ -2,7 +2,9 @@
 	NLW Return Impulse by Rockeseat
 </h1>
 
+<p align="center">
 <img src="./src/assets/images/banner.png" alt="">
+</p>
 
 
 ## 🚀 Project
