@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { routes } from './routes';
 
 const app = express();
@@ -10,10 +11,8 @@ const app = express();
 // PATCH - update unique information of an entity / do you want to receive the newsletter? yes or not?
 // DELETE - delete an information
 
+app.use(cors());
 app.use(express.json()); // (middleware) express don't understand json, so I need to use this command for express search first a file in .json format
-
-
-
 app.use(routes);
 
 app.listen(3333, () => {
