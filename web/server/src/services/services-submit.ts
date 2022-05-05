@@ -8,6 +8,9 @@ interface SubmitFeedbackServiceRequest {
 }
 
 export class SubmitFeedbackService {
+    //execute(arg0: { type: string; comment: string; screenshot: string; }): any {
+        //throw new Error("Method not implemented.");
+    //} // it's commented
     constructor (
     private feedbacksRepository: FeedbacksRepository,
     private mailAdapter: MailAdapter,
@@ -17,6 +20,21 @@ export class SubmitFeedbackService {
 
     async run(request: SubmitFeedbackServiceRequest) {
         const { type, comment, screenshot } = request;
+
+        if (!type) // if left type will have an error
+        {
+            throw new Error('Type is required.')
+        }
+
+        if (!comment)  // if left comment will have an error
+        {
+            throw new Error('Type is required.')
+        }
+
+        if (screenshot && !screenshot.startsWith('data:image/png;base64'))  // if screenshot type wasn't be "data:image..." will have an error
+        {
+            throw new Error('Invalid screenshot format.')
+        }
 
         await this.feedbacksRepository.create({
             type,
