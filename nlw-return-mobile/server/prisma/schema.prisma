@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// databases can have: {
+//tables
+//columns
+//indices
+//}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+//model = table
+// id; type; comment; screenshot - columns
+
+// id column is with "@id" because it is the primary key (primary key is necessary)
+
+// "id Int @id @default(autoincrement())" do the [1], [2], [3] order, but if use this, people can change the id in the url and read other people comments
+
+// UUID means Univer Unique ID - when the function id is called, UUID spawn a new unique ID
+//UUID format is 123e4567-e89b-12d3-a456-426614174000
+
+// "screenshot" column is with 'String?' because it is optional
+
+// in Prisma "String" is automatically changed with the database default format, eg 'VarChar' in MySQL
+// if need to work with database specific format, use "@db.#formats", eg '@db.VarChar('characters number without unity')
+
+model Feedback {
+  id String @id @default(uuid())
+
+  type String
+
+  comment String
+
+  screenshot String?
+
+  @@map("feedbacks")
+}
